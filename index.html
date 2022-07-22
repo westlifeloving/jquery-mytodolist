@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>My Todo List</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>My Todo List</h1>
+    <form class="search-task">
+        <input class="search-todo" 
+               name="filter"
+               type="text"
+               id="searchText"
+               placeholder="请搜索待办事项..."
+               autofocus
+               autocomplete="off"
+        >
+        <button id="find" class="find" type="submit">搜索</button>
+    </form>
+    <form class="add-task">
+        <input name="content"
+               type="text"
+               placeholder="请添加待办事项..."
+               autofocus
+               autocomplete="off"
+        >
+        <button id="add" class="add"type="submit">添加</button>
+    </form>
+    <div class="task-list">
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/store.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
